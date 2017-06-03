@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.0.0-alpha2"
-    timestamp="1496482430564"
+    timestamp="1496483223420"
     token="1455971308264989235"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,16 +29,16 @@
 
     <build
         build-mode="FULL"
-        timestamp="1496481925835"
+        timestamp="1496482785266"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -47,16 +47,16 @@
             location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_8.apk"
@@ -71,7 +71,7 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1496482206338"
+        timestamp="1496483108975"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -79,7 +79,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496482430564"
+        timestamp="1496483223420"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/outputs/apk/debug/Application-debug.apk"

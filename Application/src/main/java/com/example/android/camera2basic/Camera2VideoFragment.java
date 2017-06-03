@@ -382,6 +382,7 @@ public class Camera2VideoFragment extends Fragment
                                            @NonNull int[] grantResults) {
         Log.d(TAG, "onRequestPermissionsResult");
         if (requestCode == REQUEST_VIDEO_PERMISSIONS) {
+            Log.d(TAG, ""+grantResults);
             if (grantResults.length == VIDEO_PERMISSIONS.length) {
                 for (int result : grantResults) {
                     if (result != PackageManager.PERMISSION_GRANTED) {
