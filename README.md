@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 Android Camera2Basic Sample
 ===================================
@@ -88,3 +89,6 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
 License for the specific language governing permissions and limitations under
 the License.
+=======
+# RUBHackathon2017
+>>>>>>> 25e928256d119ed5f412c2da43d43f51362f4201
