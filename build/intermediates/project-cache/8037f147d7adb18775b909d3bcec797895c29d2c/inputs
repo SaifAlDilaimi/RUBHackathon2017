@@ -1,0 +1,6 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE_PATH=/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar
+FILE_HASH=bee171b9f861c656d0e7fdb14e2d9223504846ea
+DX_VERSION=1.13
+JUMBO_MODE=true
+OPTIMIZE=true

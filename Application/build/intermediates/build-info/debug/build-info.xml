@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="23"
+    api-level="25"
     build-mode="COLD"
     density="xxhdpi"
     format="10"
     plugin-version="3.0.0-alpha2"
-    timestamp="1496476034379"
-    token="-855532140582094739"
+    timestamp="1496482430564"
+    token="1455971308264989235"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
@@ -23,50 +23,67 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/outputs/apk/debug/Application-debug.apk"
+        type="SPLIT_MAIN" />
+
     <build
         build-mode="FULL"
-        timestamp="1496475968808"
+        timestamp="1496481925835"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\outputs\apk\debug\Application-debug.apk"
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/outputs/apk/debug/Application-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1496482206338"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496476034379"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="1496482430564"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/outputs/apk/debug/Application-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
 
 </instant-run>
