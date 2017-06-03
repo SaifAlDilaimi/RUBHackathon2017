@@ -12,6 +12,7 @@ MERGED from [com.android.support:support-core-utils:25.0.1] /Users/saifal-dilaim
 MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.0.1.aar/7295aba7c53d602b3a3b1ce771c22b0f/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.0.1.aar/c64cd9203200344b91dba18c71e80813/AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:support-compat:25.0.1] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/support-compat-25.0.1.aar/39df92d0ea4585578c23a0da16eb1124/AndroidManifest.xml:17:1-27:12
+MERGED from [com.writingminds:FFmpegAndroid:0.3.2] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/FFmpegAndroid-0.3.2.aar/bf8c7d2153d4c122b32d0d022c0d1b96/AndroidManifest.xml:2:1-14:12
 	package
 		ADDED from /Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/src/main/AndroidManifest.xml:19:5-47
 	xmlns:android
@@ -56,6 +57,8 @@ MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/saifal-d
 MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.0.1.aar/c64cd9203200344b91dba18c71e80813/AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:support-compat:25.0.1] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/support-compat-25.0.1.aar/39df92d0ea4585578c23a0da16eb1124/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.1] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/support-compat-25.0.1.aar/39df92d0ea4585578c23a0da16eb1124/AndroidManifest.xml:25:5-20
+MERGED from [com.writingminds:FFmpegAndroid:0.3.2] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/FFmpegAndroid-0.3.2.aar/bf8c7d2153d4c122b32d0d022c0d1b96/AndroidManifest.xml:12:5-20
+MERGED from [com.writingminds:FFmpegAndroid:0.3.2] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/FFmpegAndroid-0.3.2.aar/bf8c7d2153d4c122b32d0d022c0d1b96/AndroidManifest.xml:12:5-20
 	android:label
 		ADDED from /Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/src/main/AndroidManifest.xml:28:9-41
 	android:icon
@@ -106,6 +109,8 @@ MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/saifal-d
 MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.0.1.aar/c64cd9203200344b91dba18c71e80813/AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:support-compat:25.0.1] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/support-compat-25.0.1.aar/39df92d0ea4585578c23a0da16eb1124/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.0.1] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/support-compat-25.0.1.aar/39df92d0ea4585578c23a0da16eb1124/AndroidManifest.xml:21:5-23:58
+MERGED from [com.writingminds:FFmpegAndroid:0.3.2] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/FFmpegAndroid-0.3.2.aar/bf8c7d2153d4c122b32d0d022c0d1b96/AndroidManifest.xml:8:5-10:41
+MERGED from [com.writingminds:FFmpegAndroid:0.3.2] /Users/saifal-dilaimi/.gradle/caches/transforms-1/files-1.1/FFmpegAndroid-0.3.2.aar/bf8c7d2153d4c122b32d0d022c0d1b96/AndroidManifest.xml:8:5-10:41
 INJECTED from /Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/src/main/AndroidManifest.xml
 INJECTED from /Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/src/main/AndroidManifest.xml
 	tools:overrideLibrary

@@ -5,27 +5,28 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.0-alpha2"
-    timestamp="1496483223420"
+    timestamp="1496489957259"
     token="1455971308264989235"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="814" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="86" />
     <task
         name="verifier"
-        duration="0" />
+        duration="14" />
 
     <artifact
-        location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/outputs/apk/debug/Application-debug.apk"
-        type="SPLIT_MAIN" />
+        location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
@@ -70,20 +71,30 @@
     </build>
     <build
         build-mode="COLD"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1496485935366"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/outputs/apk/debug/Application-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1496483108975"
+        timestamp="1496489957259"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1496483223420"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/outputs/apk/debug/Application-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

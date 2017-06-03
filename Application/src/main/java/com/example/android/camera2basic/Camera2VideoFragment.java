@@ -22,6 +22,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -39,6 +40,7 @@ import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.MediaRecorder;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.support.annotation.NonNull;
@@ -55,6 +57,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.github.hiteshsondhi88.libffmpeg.ExecuteBinaryResponseHandler;
+import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
+import com.github.hiteshsondhi88.libffmpeg.LoadBinaryResponseHandler;
+import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegCommandAlreadyRunningException;
+import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegNotSupportedException;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -64,8 +72,13 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
-public class Camera2VideoFragment extends Fragment
-        implements View.OnClickListener, FragmentCompat.OnRequestPermissionsResultCallback {
+import static android.content.ContentValues.TAG;
+
+public class Camera2VideoFragment extends Fragment implements View.OnClickListener, FragmentCompat.OnRequestPermissionsResultCallback {
+
+    //FFmpeg
+    FFmpeg ffmpeg;
+    Context cameraContext;
 
     private static final int SENSOR_ORIENTATION_DEFAULT_DEGREES = 90;
     private static final int SENSOR_ORIENTATION_INVERSE_DEGREES = 270;
@@ -280,9 +293,12 @@ public class Camera2VideoFragment extends Fragment
 
     @Override
     public void onViewCreated(final View view, Bundle savedInstanceState) {
+        loadFFMpegBinary();
+
         mTextureView = (AutoFitTextureView) view.findViewById(R.id.texture);
         mButtonVideo = (Button) view.findViewById(R.id.video);
         mButtonVideo.setOnClickListener(this);
+
         view.findViewById(R.id.info).setOnClickListener(this);
     }
 
@@ -688,6 +704,8 @@ public class Camera2VideoFragment extends Fragment
             Toast.makeText(activity, "Video saved: " + mNextVideoAbsolutePath,
                     Toast.LENGTH_SHORT).show();
             Log.d(TAG, "Video saved: " + mNextVideoAbsolutePath);
+
+            extractAudioVideo(mNextVideoAbsolutePath);
         }
         mNextVideoAbsolutePath = null;
         startPreview();
@@ -761,4 +779,97 @@ public class Camera2VideoFragment extends Fragment
 
     }
 
+
+    private void loadFFMpegBinary() {
+        try {
+            if (ffmpeg == null) {
+                Log.d(TAG, "ffmpeg : null");
+                ffmpeg = FFmpeg.getInstance(getActivity());
+            }
+            ffmpeg.loadBinary(new LoadBinaryResponseHandler() {
+                @Override
+                public void onFailure() {
+                    Log.d(TAG, "EXception not supported : ");
+                }
+
+                @Override
+                public void onSuccess() {
+                    Log.d(TAG, "ffmpeg : correct Loaded");
+                }
+            });
+        } catch (FFmpegNotSupportedException e) {
+            Log.d(TAG, "EXception not supported : " + e);
+        } catch (Exception e) {
+            Log.d(TAG, "EXception not supported : " + e);
+        }
+    }
+
+    private void execFFmpegBinary(final String[] command) {
+        try {
+            ffmpeg.execute(command, new ExecuteBinaryResponseHandler() {
+                @Override
+                public void onFailure(String s) {
+                    Log.d(TAG, "FAILED with output : " + s);
+                }
+
+                @Override
+                public void onSuccess(String s) {
+                    Log.d(TAG, "SUCCESS with output : " + s);
+                    //Audio extraction success
+                }
+
+                @Override
+                public void onProgress(String s) {
+                    Log.d(TAG, "Started command : ffmpeg " + command);
+                    Log.d(TAG, "progress : " + s);
+                }
+
+                @Override
+                public void onStart() {
+                    Log.d(TAG, "Started command : ffmpeg " + command);
+                }
+
+                @Override
+                public void onFinish() {
+                    Log.d(TAG, "Finished command : ffmpeg " + command);
+
+                }
+            });
+        } catch (FFmpegCommandAlreadyRunningException e) {
+            // do nothing for now
+        }
+    }
+
+    /**
+     * Command for extracting audio from video
+     */
+    private void extractAudioVideo(String selectedVideoUri) {
+        File moviesDir = getActivity().getExternalFilesDir(null);
+        String path;
+        if (moviesDir == null){
+            path = "";
+        } else{
+            path = moviesDir.getAbsolutePath() + "/";
+        }
+
+        String filePrefix = "extract_audio";
+        String fileExtn = ".mp3";
+        String yourRealPath = selectedVideoUri;
+        File dest = new File(path, filePrefix + fileExtn);
+
+        int fileNo = 0;
+        while (dest.exists()) {
+            fileNo++;
+            dest = new File(path, filePrefix + fileNo + fileExtn);
+        }
+        Log.d(TAG, "startTrim: src: " + yourRealPath);
+        Log.d(TAG, "startTrim: dest: " + dest.getAbsolutePath());
+        String filePath = dest.getAbsolutePath();
+
+        String[] complexCommand = {"-y", "-i", yourRealPath, "-vn", "-ar", "44100", "-ac", "2", "-b:a", "256k", "-f", "mp3", filePath};
+
+        execFFmpegBinary(complexCommand);
+
+    }
 }
+

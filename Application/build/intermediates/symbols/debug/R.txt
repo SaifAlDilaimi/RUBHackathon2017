@@ -743,8 +743,9 @@ int string picture 0x7f0a0024
 int string record 0x7f0a0025
 int string request_permission 0x7f0a0026
 int string search_menu_title 0x7f0a0027
-int string status_bar_notification_info_overflow 0x7f0a0028
-int string stop 0x7f0a0029
+int string shipped_ffmpeg_version 0x7f0a0028
+int string status_bar_notification_info_overflow 0x7f0a0029
+int string stop 0x7f0a002a
 int style AlertDialog_AppCompat 0x7f0b0000
 int style AlertDialog_AppCompat_Light 0x7f0b0001
 int style Animation_AppCompat_Dialog 0x7f0b0002

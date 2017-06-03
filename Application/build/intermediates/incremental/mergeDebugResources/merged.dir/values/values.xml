@@ -375,6 +375,7 @@
     <string name="record">Record</string>
     <string name="request_permission">This sample needs camera permission.</string>
     <string name="search_menu_title">Search</string>
+    <string name="shipped_ffmpeg_version">n2.4.2</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="stop">Stop</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

@@ -18,18 +18,28 @@ package com.example.android.camera2basic;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+
+import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
+import com.github.hiteshsondhi88.libffmpeg.LoadBinaryResponseHandler;
+import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegNotSupportedException;
+
+import static android.content.ContentValues.TAG;
 
 public class CameraActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
         if (null == savedInstanceState) {
+
             getFragmentManager().beginTransaction()
                     .replace(R.id.container, Camera2VideoFragment.newInstance())
                     .commit();
         }
     }
+
 
 }

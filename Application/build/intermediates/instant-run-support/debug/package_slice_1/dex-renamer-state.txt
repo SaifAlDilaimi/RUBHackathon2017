@@ -1,4 +1,4 @@
-#Sat Jun 03 11:45:11 CEST 2017
+#Sat Jun 03 13:39:20 CEST 2017
 base.0=/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/transforms/dexMerger/debug/1
 renamed.0=classes.dex
 file.0=/Users/saifal-dilaimi/Documents/Github/RUBHackathon2017/Application/build/intermediates/transforms/dexMerger/debug/1/classes.dex
