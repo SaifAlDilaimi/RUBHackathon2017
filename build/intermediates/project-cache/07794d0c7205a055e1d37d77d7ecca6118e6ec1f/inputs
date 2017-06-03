@@ -1,0 +1,6 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE_PATH=C:\Users\Jan\AndroidStudioProjects\CameraTest\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar
+FILE_HASH=6364e28b34295e682180487f53022f38f56554b9
+DX_VERSION=1.13
+JUMBO_MODE=true
+OPTIMIZE=true
